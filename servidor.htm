@@ -1,0 +1,44 @@
+<script>
+$(function(){
+$("#valServer").on('submit', function(e){
+	$.ajax({
+     type: 'get',
+     url: 'http://www.mosp.gba.gov.ar/sig_hidraulica/ms/heron/rt/php/padron.php',
+	 data: $("#valServer").serialize(),
+     success: function(data) {
+		$('#result').html(data);
+			}
+		});
+		e.preventDefault();
+		return false;
+	});
+});
+
+$("#dni").on('change', function(e){
+if($.trim($("#dni").val())<1000000) alert('El dni es inválido');
+});
+
+</script>
+
+<form id="valServer" class="basic-grey" method="post" action="padron.php">
+	<label>
+        <span>Documento:</span>
+        <input id="dni" type="number" name="dni" placeholder="DNI,DU,LC,LE" required>
+    </label>
+    <!--label>
+        <span>Nombre:</span>
+        <input id="nombre" type="text" name="nombre" placeholder="Nombre" required>
+    </label>
+    <label>
+        <span>Mail:</span>
+        <input id="email" type="email" name="email" placeholder="email" required>
+    </label> 
+	<label>
+        <span>Fecha Nacimiento:</span>
+		<input id="fechanac" type="date" name="fechanac" placeholder="Fecha Nacimiento" required>
+    </label-->
+	<label>
+        <span>&nbsp;</span> 
+        <input type="submit" class="button" value="Consultar"/> 
+    </label>    
+</form>

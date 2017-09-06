@@ -1,0 +1,30 @@
+﻿<form class="basic-grey">
+	<label>
+        <span>Apellido:</span>
+        <input id="apellido" type="text" name="apellido" maxlength="15" placeholder="Apellido" />
+    </label>
+    <label>
+        <span>Nombre:</span>
+        <input id="nombre" type="text" name="nombre" maxlength="15" placeholder="Nombre" />
+    </label>
+    <label>
+        <span>Legajo:</span>
+        <input id="legajo" type="text" name="legajo" maxlength="15" placeholder="Legajo" />
+    </label> 
+	<label>
+        <span>Turno:</span>
+		<input type="radio" name="turno" value="Mañana" checked>Mañana
+		<input type="radio" name="turno" value="Tarde">Tarde
+    </label>
+    <label>
+        <span>Comision:</span><select name="comision" id="comision">
+			<option value="56">56</option>
+			<option value="57">57</option>
+			<option value="70">70</option>
+        </select>
+    </label>
+	<label>
+        <span>&nbsp;</span> 
+        <input type="button" class="button" value="Enviar" onclick="printForm()" /> 
+    </label>    
+</form>

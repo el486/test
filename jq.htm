@@ -1,0 +1,28 @@
+﻿<form class="basic-grey">
+<label>
+     <label>
+        <span>Operacion:</span><select name="selection" id="selection">
+			<option value="suma">Suma</option>
+			<option value="suma">Resta</option>
+			<option value="suma">Multiplicacion</option>
+			<option value="suma">Division</option>
+        </select>
+    </label>
+        <span>Operador 1:</span>
+        <input id="op1" type="number" name="op1" value=0 placeholder="operador 1" />
+    </label>
+    
+    <label>
+        <span>Operador 2:</span>
+        <input id="op2" type="number" name="op2" value=0 placeholder="operador 2" />
+    </label>
+    
+    <label>
+        <span>Resultado:</span>
+        <input id="res" type="number" name="res" placeholder="Resultado" disabled/>
+    </label> 
+     <label>
+        <span>&nbsp;</span> 
+        <input type="button" class="button" value="Calcular" onclick="jq()" /> 
+    </label>    
+</form>

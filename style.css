@@ -1,0 +1,162 @@
+*{
+font:normal 18px arial,tahoma, helvetica, sans-serif;
+}
+div.container {
+    width: 100%;
+    overflow:hidden;
+	}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+	
+/*header {
+    padding: 1em;
+    color: white;
+    background-color: blue;
+    clear: left;
+    text-align: center;
+}
+    
+.imagen{
+	position:absolute;
+	left:20px;
+	top:15px;
+}
+.encabezado{
+margin-left:150px;
+font:normal 20px arial,tahoma, helvetica, sans-serif;
+}*/
+
+nav {
+    float: left;
+	background-color: #aaaaaa;
+    width: 150px;
+	margin: 0;
+    padding: 1em;
+	padding-bottom: 99999px;
+    margin-bottom: -99999px;
+	}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+  text-decoration: none;
+  font-weight:bold;
+}
+nav li {
+padding-bottom:10px;
+}
+
+article {
+    margin-left: 0px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+	text-align:center;
+	}
+
+#frase{
+font:normal 25px arial,tahoma, helvetica, sans-serif;
+}
+	
+section {
+    padding:20px;
+}
+
+header {
+    padding: 1em;
+    color: white;
+    background-color: #555555;
+	text-align:left;
+	font-weight: bold;
+    
+}
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: #555555;
+	text-align:right;
+	font-weight: bold;
+    
+}
+
+.basic-grey {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
+	text-align:left;
+}
+.basic-grey label {
+    display: block;
+    margin: 0px;
+}
+.basic-grey label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #888;
+}
+.basic-grey input, .basic-grey select {
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+    
+}
+.basic-grey input[type="radio"]{
+	height: 20px;
+	width:20px;
+}
+
+.basic-grey select {
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height: 25px;
+}
+
+.basic-grey .button {
+    background: #174F9C;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+.basic-grey .button:hover {
+    background: #CF7A7A
+}
+.basic-grey td:first-child {
+  font-weight: bold;
+}
+.basic-grey tr {
+  height:30px;
+}
+
